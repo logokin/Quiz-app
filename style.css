@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    width:100% ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+li{
+    list-style: none;
+}
+input[type='checked']{
+    background-color: green;
+}
+#yes{
+    background-color: blue;
+}
+#ques{
+    background-image: url(./img/pexels-pixabay-256468.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    padding: 0 10px;
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+.answers li{
+    border: 3px solid black;
+    text-indent: 15px;
+    padding: 10px;
+}
+
+
+#button{
+    width: 30%;
+    padding: 8px;
+    margin: 10px 0px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
