@@ -123,7 +123,7 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const button = document.getElementById("button");
-var input = document.querySelectorAll("input");
+// var input = document.querySelectorAll("input");
 
 var currentItem = 0;
 let score = 0;
@@ -180,6 +180,30 @@ button.addEventListener("click", function () {
       // alert(`congratulations, you've finished`);
       quizDiv.innerHTML = `<h2>you answered correctly ${score}/${quiz.length}questions.`;
     }
-  } 
+  }
 });
- 
+
+const questionHead = document.getElementById("ques");
+
+function randomImage() {
+  let images = ["url(./img/0.jpg)", "url(./img/1.jpg)", "url(./img/2.jpg)"];
+  var random = images[Math.floor(Math.random() * images.length)];
+  questionHead.style.backgroundImage = random;
+}
+
+setInterval(randomImage, 3000);
+
+const fabars = document.querySelector(".fa-bars");
+const times =document.querySelector('.fa-times')
+const height = document.querySelector(".height");
+
+fabars.addEventListener("click", () => {
+  height.classList.add("height-add");
+});
+
+times.onclick=close;
+
+function close(){
+  height.classList.remove("height-add");
+}
+
