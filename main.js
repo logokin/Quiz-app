@@ -194,16 +194,22 @@ function randomImage() {
 setInterval(randomImage, 3000);
 
 const fabars = document.querySelector(".fa-bars");
-const times =document.querySelector('.fa-times')
+const times = document.querySelector(".fa-times");
 const height = document.querySelector(".height");
 
 fabars.addEventListener("click", () => {
   height.classList.add("height-add");
 });
 
-times.onclick=close;
+times.onclick = close;
 
-function close(){
+function close() {
   height.classList.remove("height-add");
 }
 
+let img = document.querySelector(".img");
+let body = document.querySelector("body");
+window.addEventListener("load", () => {
+  body.style.backgroundColor = "red";
+  img.classList.add("dissappear");
+});
