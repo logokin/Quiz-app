@@ -207,9 +207,9 @@ function close() {
   height.classList.remove("height-add");
 }
 
-let img = document.querySelector(".img");
-let body = document.querySelector("body");
-window.addEventListener("load", () => {
-  body.style.backgroundColor = "red";
-  img.classList.add("dissappear");
-});
+// let img = document.querySelector(".img");
+// let body = document.querySelector("body");
+// window.addEventListener("load", () => {
+//   body.style.backgroundColor = "red";
+//   img.classList.add("dissappear");
+// });
